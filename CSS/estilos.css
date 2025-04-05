@@ -1,0 +1,53 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #a73030; 
+}
+
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #fd0000;
+}
+
+.card {
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; 
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card:hover {
+    background-color: #f8f9fa; 
+    transform: scale(1.05); 
+  }
+  
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  body, p {
+    font-family: 'Lora', serif;
+  }
