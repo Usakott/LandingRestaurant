@@ -3,137 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Aniquilador del hambre</title>
+    <title>El Aniquilador del Hambre</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-
-      .navbar {
-        background-color: #343a40; 
-      }
-  
-      .navbar-nav .nav-link {
-        color: #f5f5f5 !important; 
-        font-size: 1.1rem; 
-        font-weight: 400;
-        letter-spacing: 1px; 
-        text-transform: uppercase; 
-      }
-  
-      .navbar-nav .nav-link:hover {
-        color: #FF6347 !important;
-      }
-  
-      .navbar-brand {
-        font-family: 'Poppins', sans-serif; 
-        font-size: 1.5rem; 
-        color: #ffffff; 
-        font-weight: 600; 
-        text-align: center;
-        position: absolute; 
-        left: 50%;
-        transform: translateX(-50%); 
-      }
-
-      .navbar-collapse {
-        justify-content: flex-start; 
-      }
-      
-      .carousel-item img {
-          width: 100%; 
-          height: 200px; 
-          object-fit: cover; 
-          object-position: center; 
-        }
-      
-        .card-body {
-          text-align: center; 
-        }
-      
-        .price {
-          font-weight: bold;
-          color: #28a745; 
-        }
-
-        #banner .carousel-inner {
-          width: 100%;
-          height: 900px;
-          overflow: hidden;
-        }
-
-
-        #banner .carousel-item img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;  
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">inicio</a>
-            </li>
-           <li class="nav-item">
-              <a class="nav-link" href="#">Carta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nuestra historia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sucursales</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-          <a class="navbar-brand" href="#">El Aniquilador del Hambre</a>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">El Aniquilador del Hambre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item"><a class="nav-link active" href="#Inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Carta">Carta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Historia">Nuestra historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Sucursales">Sucursales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <!--banner-->
+<div id="Inicio">
+  <div id="banner" class="carousel slide" data-bs-ride="carousel">
 
-      <div id="banner" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+    </div>
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/chacarero.jpg" alt="chacarero">
         </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagenes/pizzaPe.jpg" alt="pepperoni">
-          </div>
-          <div class="carousel-item">
-            <img src="imagenes/parrillada.jpg" alt="parrillada">
-          </div>
-          <div class="carousel-item">
-            <img src="imagenes/alitas.jpg" alt="alitas">
-          </div>
+        <div class="carousel-item">
+          <img src="imagenes/HeladoCopa.jpg" alt="helado">
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img src="imagenes/choclopastel.jpg " alt="pastel de choclo">
+        </div>
       </div>
 
-<div class="p-3">
-  <div class="text-center">
-    <h1 class="display-3">Carta</h1>
+      <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+<div id="Carta">
+  <div class="text-center text-white p-3">
+    <h2 class="display-3">
+      <span style="background-color: #c48c15; padding: 0.10rem 4.00rem; border-radius: 40px;">CARTA</span>
+    </h2>
   </div>
 </div>
-<!--Sandwich-->
+<!--Sandwiches-->
 <div class="p-3">
-  <div class="text-center text-white bg-success">
-    <h2>Sandwiches</h2>
+  <div class="text-center text-white">
+    <h2 class="text-white py-2">
+      <span class="bg-success px-4 py-2 rounded-pill d-inline-block w-100 w-md-auto text-center">Sandwiches</span>
+    </h2>
   </div>
 </div>
 
@@ -148,7 +87,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
               <img src="imagenes/hamburguesa.jpg" class="card-img-top" alt="Hamburguesa">
               <div class="card-body">
@@ -159,62 +98,62 @@
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pichanga.jpg" class="card-img-top" alt="Pichanga">
+              <img src="imagenes/mechada.jpg" class="card-img-top" alt="Mechada Completa">
               <div class="card-body">
-                <h5 class="card-title">Pichanga para 2</h5>
-                <p class="card-text">Papas fritas, queso, carne, pollo, longaniza, pickles, tomate y palta.</p>
-                <p class="price">$14.000</p>
+                <h5 class="card-title">Mechada Completa</h5>
+                <p class="card-text">Mechada, palta, tomate, mayonesa, chucrut y americana.</p>
+                <p class="price">$10.290</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pizza.jpg" class="card-img-top" alt="Pizza">
+              <img src="imagenes/chacarero.jpg" class="card-img-top" alt="chacarero">
               <div class="card-body">
-                <h5 class="card-title">Pizza</h5>
-                <p class="card-text">Pizza con salsa de tomate, queso mozzarella y pepperoni.</p>
-                <p class="price">$12.500</p>
+                <h5 class="card-title">Chacarero</h5>
+                <p class="card-text">Vacuno, tomate, mayonesa, porotos verdes, aji verde.</p>
+                <p class="price">$8.970</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Segunda diapositiva -->
+      <!--Segunda diapositiva-->
       <div class="carousel-item">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/chorrillana.webp" class="card-img-top" alt="Chorrillana">
+              <img src="imagenes/barrosluco.jpeg" class="card-img-top" alt="Barros Luco">
               <div class="card-body">
-                <h5 class="card-title">Chorrillana</h5>
-                <p class="card-text">Papas fritas, huevo frito, cebolla caramelizada, carne de res.</p>
-                <p class="price">$15.000</p>
+                <h5 class="card-title">Barros Luco</h5>
+                <p class="card-text">Carne de vacuno a la plancha y queso fundido.</p>
+                <p class="price">$8.450</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/bravas.jpg" class="card-img-top" alt="Papas Bravas">
+              <img src="imagenes/BbqBurger.jpg" class="card-img-top" alt="BBQ Burger">
               <div class="card-body">
-                <h5 class="card-title">Papas Bravas para 2</h5>
-                <p class="card-text">Papas fritas, salsa picante, ciboulette.</p>
+                <h5 class="card-title">Hamburguesa BBQ</h5>
+                <p class="card-text">Hamburguesa, pimenton, cebolla caramelizada, salsa BBQ.</p>
                 <p class="price">$8.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/completo.jpg" class="card-img-top" alt="Sushi">
+              <img src="imagenes/yorkburger.jpg" class="card-img-top" alt="New York Burger">
               <div class="card-body">
-                <h5 class="card-title">Completo italiano</h5>
-                <p class="card-text">salchicha artesanal, tomate, palta, mayonesa casera</p>
-                <p class="price">$2.500</p>
+                <h5 class="card-title">New York Burger</h5>
+                <p class="card-text">Hamburguesa, cheddar, tocino, cebolla caramelizada, huevo.</p>
+                <p class="price">$9.900</p>
               </div>
             </div>
           </div>
@@ -236,8 +175,10 @@
 
 <!--Platos-->
 <div class="p-3">
-  <div class="text-center text-white bg-success">
-    <h2>Platos</h2>
+  <div class="text-center text-white">
+    <h2 class="text-white py-2">
+      <span class="bg-success px-4 py-2 rounded-pill d-inline-block w-100 w-md-auto text-center">Platos</span>
+    </h2>
   </div>
 </div>
 
@@ -252,72 +193,72 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/hamburguesa.jpg" class="card-img-top" alt="Hamburguesa">
+              <img src="imagenes/alopobre.jpg" class="card-img-top" alt="Bistec a lo Pobre">
               <div class="card-body">
-                <h5 class="card-title">Hamburguesa</h5>
-                <p class="card-text">Carne de res, queso cheddar, tocino, lechuga, y salsa BBQ.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Bistec a lo Pobre</h5>
+                <p class="card-text">Churrasco, cebolla caramelizada, papas fritas, huevo frito.</p>
+                <p class="price">$14.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pichanga.jpg" class="card-img-top" alt="Pichanga">
+              <img src="imagenes/salmon.jpg" class="card-img-top" alt="salmon a la plancha">
               <div class="card-body">
-                <h5 class="card-title">Pichanga para 2</h5>
-                <p class="card-text">Papas fritas, queso, carne, pollo, longaniza, pickles, tomate y palta.</p>
-                <p class="price">$14.000</p>
+                <h5 class="card-title">Salmón a la plancha</h5>
+                <p class="card-text">Salmón a la plancha, con agregado a elecciones (arroz o pure).</p>
+                <p class="price">15.000</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pizza.jpg" class="card-img-top" alt="Pizza">
+              <img src="imagenes/porotos.jpg" class="card-img-top" alt="Porotos con rienda">
               <div class="card-body">
-                <h5 class="card-title">Pizza</h5>
-                <p class="card-text">Pizza con salsa de tomate, queso mozzarella y pepperoni.</p>
-                <p class="price">$12.500</p>
+                <h5 class="card-title">Porotos con rienda</h5>
+                <p class="card-text">Porotos con rienda, longaniza artesanal.</p>
+                <p class="price">$5.500</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Segunda diapositiva -->
+      <!--Segunda diapositiva-->
       <div class="carousel-item">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/chorrillana.webp" class="card-img-top" alt="Chorrillana">
+              <img src="imagenes/charquican.jpg" class="card-img-top" alt="Charquican">
               <div class="card-body">
-                <h5 class="card-title">Chorrillana</h5>
-                <p class="card-text">Papas fritas, huevo frito, cebolla caramelizada, carne de res.</p>
-                <p class="price">$15.000</p>
+                <h5 class="card-title">Charquican</h5>
+                <p class="card-text">carne, papas cocidas, zapallo, choclo, arvejas, huevo frito.</p>
+                <p class="price">$6.000</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/bravas.jpg" class="card-img-top" alt="Papas Bravas">
+              <img src="imagenes/pastelchoclo.png" class="card-img-top" alt="Pastel de choclo">
               <div class="card-body">
-                <h5 class="card-title">Papas Bravas para 2</h5>
-                <p class="card-text">Papas fritas, salsa picante, ciboulette.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Pastel de choclo</h5>
+                <p class="card-text">Base de pino, rodajas de huevo y choclo dulce.</p>
+                <p class="price">$6.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/completo.jpg" class="card-img-top" alt="Sushi">
+              <img src="imagenes/cazuela.jpeg" class="card-img-top" alt="Cazuela">
               <div class="card-body">
-                <h5 class="card-title">Completo italiano</h5>
-                <p class="card-text">salchicha artesanal, tomate, palta, mayonesa casera</p>
+                <h5 class="card-title">Cazuela de Vacuno</h5>
+                <p class="card-text">carne de Vacuno, choclo, zapallo, papas, zanahoria, pimenton.</p>
                 <p class="price">$2.500</p>
               </div>
             </div>
@@ -340,8 +281,10 @@
 
 <!--Bebestibles-->
 <div class="p-3">
-  <div class="text-center text-white bg-success">
-    <h2>Bebestibles</h2>
+  <div class="text-center text-white">
+    <h2 class="text-white py-2">
+      <span class="bg-success px-4 py-2 rounded-pill d-inline-block w-100 w-md-auto text-center">Bebestibles</span>
+    </h2>
   </div>
 </div>
 
@@ -356,73 +299,73 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/hamburguesa.jpg" class="card-img-top" alt="Hamburguesa">
+              <img src="imagenes/bebidas.jpg" class="card-img-top" alt="Bebidas">
               <div class="card-body">
-                <h5 class="card-title">Hamburguesa</h5>
-                <p class="card-text">Carne de res, queso cheddar, tocino, lechuga, y salsa BBQ.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Bebidas</h5>
+                <p class="card-text">Coca-cola, Sprite, Fanta, Canada Dry, Kem.</p>
+                <p class="price">$1.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pichanga.jpg" class="card-img-top" alt="Pichanga">
+              <img src="imagenes/jugos.jpg" class="card-img-top" alt="Jugos Naturales">
               <div class="card-body">
-                <h5 class="card-title">Pichanga para 2</h5>
-                <p class="card-text">Papas fritas, queso, carne, pollo, longaniza, pickles, tomate y palta.</p>
-                <p class="price">$14.000</p>
+                <h5 class="card-title">Jugos Naturales</h5>
+                <p class="card-text">Sabor Kiwi, arandano, naranja y fresa</p>
+                <p class="price">$3.000</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pizza.jpg" class="card-img-top" alt="Pizza">
+              <img src="imagenes/Limonada.jpg" class="card-img-top" alt="Limonada">
               <div class="card-body">
-                <h5 class="card-title">Pizza</h5>
-                <p class="card-text">Pizza con salsa de tomate, queso mozzarella y pepperoni.</p>
-                <p class="price">$12.500</p>
+                <h5 class="card-title">Limonada</h5>
+                <p class="card-text">Limones, azucar, cubitos de hielo, hojas de menta.</p>
+                <p class="price">$3.000</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Segunda diapositiva -->
+      <!--Segunda diapositiva-->
       <div class="carousel-item">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/chorrillana.webp" class="card-img-top" alt="Chorrillana">
+              <img src="imagenes/Belzeboo.jpg" class="card-img-top" alt="Cerveza Belzeboo">
               <div class="card-body">
-                <h5 class="card-title">Chorrillana</h5>
-                <p class="card-text">Papas fritas, huevo frito, cebolla caramelizada, carne de res.</p>
-                <p class="price">$15.000</p>
+                <h5 class="card-title">Cerveza Belzeboo</h5>
+                <p class="card-text">Imperial Stout: Cerveza Bundor "Belzeboo" 330cc.</p>
+                <p class="price">$3.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/bravas.jpg" class="card-img-top" alt="Papas Bravas">
+              <img src="imagenes/torobayo.jpg" class="card-img-top" alt="Cerveza Torobayo">
               <div class="card-body">
-                <h5 class="card-title">Papas Bravas para 2</h5>
-                <p class="card-text">Papas fritas, salsa picante, ciboulette.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Cerveza Torobayo</h5>
+                <p class="card-text">Cerveza Torobayo 470 cc, con o sin alcohol</p>
+                <p class="price">$4.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/completo.jpg" class="card-img-top" alt="Sushi">
+              <img src="imagenes/CafeTe.jpg" class="card-img-top" alt="Cafe y Te">
               <div class="card-body">
-                <h5 class="card-title">Completo italiano</h5>
-                <p class="card-text">salchicha artesanal, tomate, palta, mayonesa casera</p>
-                <p class="price">$2.500</p>
+                <h5 class="card-title">Café o Té</h5>
+                <p class="card-text">Café expresso/Nescafe o Té twinings (sabor a elección)</p>
+                <p class="price">$1.500</p>
               </div>
             </div>
           </div>
@@ -443,8 +386,10 @@
 
 <!--Postres-->
 <div class="p-3">
-  <div class="text-center text-white bg-success">
-    <h2>Postres</h2>
+  <div class="text-center text-white">
+    <h2 class="text-white py-2">
+      <span class="bg-success px-4 py-2 rounded-pill d-inline-block w-100 w-md-auto text-center">Postres</span>
+    </h2>
   </div>
 </div>
 
@@ -459,73 +404,73 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/hamburguesa.jpg" class="card-img-top" alt="Hamburguesa">
+              <img src="imagenes/tiramisu.png" class="card-img-top" alt="Tiramisu">
               <div class="card-body">
-                <h5 class="card-title">Hamburguesa</h5>
-                <p class="card-text">Carne de res, queso cheddar, tocino, lechuga, y salsa BBQ.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Tiramisu</h5>
+                <p class="card-text">Bizcocho bañados de almibar de café y una crema Mascarpone.</p>
+                <p class="price">$4.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pichanga.jpg" class="card-img-top" alt="Pichanga">
+              <img src="imagenes/lecheasada.jpg" class="card-img-top" alt="Leche Asada">
               <div class="card-body">
-                <h5 class="card-title">Pichanga para 2</h5>
-                <p class="card-text">Papas fritas, queso, carne, pollo, longaniza, pickles, tomate y palta.</p>
-                <p class="price">$14.000</p>
+                <h5 class="card-title">Leche Asada</h5>
+                <p class="card-text">leche entera, huevos frescos, azúcar y de vainilla</p>
+                <p class="price">$3.500</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/pizza.jpg" class="card-img-top" alt="Pizza">
+              <img src="imagenes/pie.jpg" class="card-img-top" alt="Pie de Limon">
               <div class="card-body">
-                <h5 class="card-title">Pizza</h5>
-                <p class="card-text">Pizza con salsa de tomate, queso mozzarella y pepperoni.</p>
-                <p class="price">$12.500</p>
+                <h5 class="card-title">Pie de Limon</h5>
+                <p class="card-text">Base crocante, crema de limón y merengue dorado.</p>
+                <p class="price">$3.700</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Segunda diapositiva -->
+      <!--Segunda diapositiva-->
       <div class="carousel-item">
         <div class="row justify-content-center">
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/chorrillana.webp" class="card-img-top" alt="Chorrillana">
+              <img src="imagenes/kuchen.jpeg" class="card-img-top" alt="Kuchen de maicena">
               <div class="card-body">
-                <h5 class="card-title">Chorrillana</h5>
-                <p class="card-text">Papas fritas, huevo frito, cebolla caramelizada, carne de res.</p>
-                <p class="price">$15.000</p>
+                <h5 class="card-title">Kuchen de maicena</h5>
+                <p class="card-text">Exquisito Kuchen con la tradicional receta del sur.</p>
+                <p class="price">$4.000</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/bravas.jpg" class="card-img-top" alt="Papas Bravas">
+              <img src="imagenes/helado.jpg" class="card-img-top" alt="Copa de helado">
               <div class="card-body">
-                <h5 class="card-title">Papas Bravas para 2</h5>
-                <p class="card-text">Papas fritas, salsa picante, ciboulette.</p>
-                <p class="price">$8.500</p>
+                <h5 class="card-title">Copa de helado</h5>
+                <p class="card-text">Helado a elección, junto a galletas, salsa, crema chantilly.</p>
+                <p class="price">$4.000</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mx-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card">
-              <img src="imagenes/completo.jpg" class="card-img-top" alt="Sushi">
+              <img src="imagenes/celestial.webp" class="card-img-top" alt="Torta celestial">
               <div class="card-body">
-                <h5 class="card-title">Completo italiano</h5>
-                <p class="card-text">salchicha artesanal, tomate, palta, mayonesa casera</p>
-                <p class="price">$2.500</p>
+                <h5 class="card-title">Torta Celestial</h5>
+                <p class="card-text">celestial Bizcocho, merengue, manjar, crema, frambuesa y mil hojas</p>
+                <p class="price">$5.500</p>
               </div>
             </div>
           </div>
@@ -545,11 +490,16 @@
   </div>
 
   <!--Historia del Restaurant-->
-  <div class="container mt-5">
+
+  <h2 class="p-4 text-center text-white">
+    <span style="background-color: #88857b; padding: 0.50rem 10%; border-radius: 50px; display: inline-block;">
+      LA HISTORIA DE NUESTRA EMPRESA
+    </span>
+  </h2>
+
+  <div id="Historia" class="container mt-5">
     <div class="row text-center">
       <div class="col-12">
-        <h2>La Historia de Nuestra Empresa</h2>
-        <p>Con más de 50 años de experiencia, hemos crecido y evolucionado para ofrecerte los mejores platos.</p>
       </div>
     </div>
     <!--historia 1-->
@@ -559,7 +509,8 @@
           <img src="imagenes/historia1.jpg" class="card-img-top" alt="Imagen Historia 1">
           <div class="card-body">
             <h5 class="card-title">Nuestros Primeros Años</h5>
-            <p class="card-text">Comenzamos con una pequeña tienda de comida, ofreciendo platos caseros hechos con amor.</p>
+            <p class="card-text">Hace 50 años, con una pequeña cocina en casa y un corazón lleno de sueños, abrí las puertas de este restaurante. 
+              Solo quería compartir lo que más amaba: los sabores de lo casero, el calor de un plato hecho con amor.</p>
           </div>
         </div>
       </div>
@@ -570,7 +521,8 @@
           <img src="imagenes/historia2.jpg" class="card-img-top" alt="Imagen Historia 2">
           <div class="card-body">
             <h5 class="card-title">Creciendo con la Comunidad</h5>
-            <p class="card-text">Con el paso de los años, nuestra comunidad creció, y nosotros con ella.</p>
+            <p class="card-text">Crecimos juntos, ustedes y nosotros. Cada sonrisa, cada plato vacío, y cada abrazo fue moldeando este espacio, 
+              convirtiéndolo en un refugio familiar para la comunidad.</p>
           </div>
         </div>
       </div>
@@ -581,7 +533,8 @@
           <img src="imagenes/historia3.jpg" class="card-img-top" alt="Imagen Historia 3">
           <div class="card-body">
             <h5 class="card-title">Hoy en Día</h5>
-            <p class="card-text">Hoy seguimos siendo un referente, innovando con nuevos platos y manteniendo nuestras tradiciones.</p>
+            <p class="card-text">Hoy, medio siglo después, seguimos aquí, agradecidos por su confianza y felices de seguir sirviendo amor en cada plato. 
+              Este no es solo un restaurante, es nuestra historia compartida.</p>
           </div>
         </div>
       </div>
@@ -601,7 +554,7 @@
     <div class="row mt-4">
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/testimonio1.jpg" class="card-img-top" alt="Testimonio 1">
+          <img src="imagenes/testimonio1.jpeg" class="card-img-top" alt="Testimonio 1">
           <div class="card-body">
             <h5 class="card-title">Carlos G.</h5>
             <p class="card-text">"La mejor hamburguesa que he probado. El sabor es único y el ambiente es increíble. ¡Volveré pronto!"</p>
@@ -625,7 +578,7 @@
         <div class="card">
           <img src="imagenes/testimonio3.jpg" class="card-img-top" alt="Testimonio 3">
           <div class="card-body">
-            <h5 class="card-title">Juan P.</h5>
+            <h5 class="card-title">Liara H.</h5>
             <p class="card-text">"Los mejores platos en la ciudad. Siempre salgo satisfecho y con ganas de volver. ¡Gracias!"</p>
           </div>
         </div>
@@ -635,15 +588,15 @@
 
   <!--Sucursales-->
 
-  <h2 class="text-center p-3">Nuestras Sucursales</h2>
+  <h2 id="Sucursales" class="text-center p-3">Nuestras Sucursales</h2>
   <div class="row g-4">
 
     <!--Sucursal 1-->
-    <div class="col-md-6 p-3">
+    <div id="sucursal1" class="col-md-6 p-3">
       <div class="card h-100">
-        <img src="sucursal1.jpg" class="card-img-top" alt="Sucursal Chacabuco Valdivia">
         <div class="card-body">
-          <h5 class="card-title">Sucursal Valdivia</h5>
+          <img src="imagenes/sucursal2.jpg" class="card-img-top" alt="sucursalchacabuco">
+          <h5 class="card-title">Sucursal Chacabuco</h5>
           <p><strong>Dirección:</strong> Chacabuco 454, Valdivia, Los Ríos</p>
           <p><strong>Cómo llegar:</strong> A 1 calle del Supermercado Santa Isabel.</p>
           <p><strong>Teléfono:</strong> <a href="tel:+56921128171">+56 9 2112 8171</a></p>
@@ -658,10 +611,10 @@
     </div>
 
     <!--Sucursal 2-->
-    <div class="col-md-6 p-3">
+    <div id="sucursal2" class="col-md-6 p-3">
       <div class="card h-100">
-        <img src="sucursal2.jpg" class="card-img-top" alt="Sucursal Viña del Mar">
         <div class="card-body">
+          <img src="imagenes/sucursalrobles.jpg" alt="sucursalLosRobles">
           <h5 class="card-title">Sucursal Los Robles</h5>
           <p><strong>Dirección:</strong> Av. Los Robles 075, Valdivia, Los Ríos</p>
           <p><strong>Cómo llegar:</strong> Cruzando el puente Calle-Calle.</p>
@@ -679,7 +632,7 @@
 
 <!--Contacto/reclamos-->
 
-<h2 class="text-center mb-4 p-3">Formulario de Contacto</h2>
+<h2 id="Contacto" class="text-center mb-4 p-3">Formulario de Contacto</h2>
   <form class="needs-validation" novalidate>
     <div class="row mb-3">
       <div class="col-md-6">
@@ -736,13 +689,10 @@
   })();
 </script>
 
-<!--pie de pagina-->
-
 <footer class="bg-dark text-white py-4 mt-5">
   <div class="container">
     <div class="row">
 
-      <!-- Información de contacto -->
       <div class="col-md-6 mb-3">
         <h5 class="fw-bold">Contáctanos</h5>
         <p class="mb-1">📍 <strong>Sucursal Chacabuco:</strong> +56 9 2112 8171</p>
@@ -751,7 +701,7 @@
         <p class="mb-0">📧 losrobles@aniquilador.cl</p>
       </div>
 
-      <!-- Redes sociales -->
+      <!--Redes sociales-->
       <div class="col-md-6 mb-3 text-md-end">
         <h5 class="fw-bold">Síguenos</h5>
         <a href="https://facebook.com" target="_blank" class="d-inline-block me-3">
@@ -767,9 +717,8 @@
 
     </div>
 
-    <!-- Línea final -->
     <div class="text-center pt-3 border-top border-secondary mt-3" style="font-size: 0.875rem;">
-      &copy; 2025 Restaurante Valdivia. Todos los derechos reservados.
+      &copy; 2025 Restaurantes Aniquilador. Todos los derechos reservados.
     </div>
   </div>
 </footer>
